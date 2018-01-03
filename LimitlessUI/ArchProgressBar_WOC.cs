@@ -149,6 +149,14 @@ namespace LimitlessUI
             Invalidate();
         }
 
+        public void UpdateData(string text1, string text2, int progress)
+        {
+            _text1 = text1;
+            _text2 = text2;
+            _progress = progress;
+            Invalidate();
+        }
+
         public void UpdateData(string text2, string text3, int progress, Color text3Color)
         {
             _text2 = text2;
